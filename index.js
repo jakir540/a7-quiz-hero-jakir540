@@ -58,7 +58,7 @@ const displayQuiz = (data) => {
     quizContainer.innerHTML = "";
     return;
   }
-  console.log(data);
+ 
   data.forEach((quiz, i) => {
  
 
@@ -186,3 +186,9 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+// blog Button move the another page 
+
+document.getElementById('blogBtn').addEventListener('click',function () {
+  location.href = "answer.html";
+})
